@@ -20,8 +20,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func switchScreenToUpdated(sender: UIButton) {
-    }
+        @IBAction func switchScreentoUpdated(sender: UIButton)
+     {
+        
     performSegueWithIdentifier("toUpdatedFromMain", sender:sender)
     }
+}
 

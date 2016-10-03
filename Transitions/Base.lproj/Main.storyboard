@@ -20,22 +20,65 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-NF-kX9">
                                 <rect key="frame" x="207" y="260" width="186" height="30"/>
                                 <color key="backgroundColor" red="0.97916829478989698" green="1" blue="0.39899894413134951" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Change Screen Button">
+                                <state key="normal" title="Hobbies Page">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.54095466926172664" green="0.58240919014241443" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="switchScreenToUpdated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJX-R1-Hgx"/>
+                                    <action selector="switchScreentoUpdated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="InO-Vc-WY0"/>
                                     <segue destination="qMf-7z-wHZ" kind="show" identifier="toUpdatedFromMain" id="f4S-FX-aYP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chris Fabian" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hik-hu-Pbg">
+                                <rect key="frame" x="201" y="85" width="198" height="37"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zc-pF-2yS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.98682502160497287" blue="0.34578899319760836" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Activities Page">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="238" y="348" width="125" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.41177187411079386" green="1" blue="0.72447570121728133" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0zc-pF-2yS"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="0zc-pF-2yS"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="151"/>
+            <point key="canvasLocation" x="25.5" y="150.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mfg-6c-JA9">
+            <objects>
+                <viewController id="Ckd-27-3eq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2yh-yf-WW4"/>
+                        <viewControllerLayoutGuide type="bottom" id="NmF-UP-q6p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sc5-0U-oMB">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Yw-6B-l9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.25" y="921.75"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="OEI-em-zp1">
@@ -48,12 +91,72 @@
                     <view key="view" contentMode="scaleToFill" id="sbf-oG-pOf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="VUg-H2-eza">
+                                <rect key="frame" x="180" y="40" width="240" height="194"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="236" width="240" height="194"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Btn-yp-dby">
+                                <rect key="frame" x="180" y="311" width="240" height="208"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="280" y="525" width="240" height="208"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gG3-26-Z0C">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rock Climbing">
+                                        <attributes>
+                                            <color key="NSColor" red="0.41177187409999999" green="1" blue="0.72447570120000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="22" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="81" y="144" width="163" height="33"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyF-tf-h7z">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <color key="textColor" red="0.41177187409999999" green="1" blue="0.72447570120000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="107" y="480" width="137" height="25"/>
+                                </variation>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.4815466354537622" green="0.51968324577879332" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gG3-26-Z0C"/>
+                                <exclude reference="lyF-tf-h7z"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="gG3-26-Z0C"/>
+                                <include reference="lyF-tf-h7z"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="Btn-yp-dby" id="SWt-YD-11c"/>
+                        <outlet property="carsLabel" destination="lyF-tf-h7z" id="akE-uC-yli"/>
+                        <outlet property="rockClimbingLabel" destination="gG3-26-Z0C" id="TDx-E5-8jX"/>
+                        <outlet property="topImage" destination="VUg-H2-eza" id="A7H-1W-e5h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBC-PA-yVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840" y="151"/>
+            <point key="canvasLocation" x="886.5" y="150.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rock" width="720" height="960"/>
+    </resources>
 </document>
