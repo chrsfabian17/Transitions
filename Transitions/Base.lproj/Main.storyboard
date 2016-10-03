@@ -18,14 +18,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-NF-kX9">
-                                <rect key="frame" x="195" y="262" width="210" height="30"/>
+                                <rect key="frame" x="207" y="260" width="186" height="30"/>
                                 <color key="backgroundColor" red="0.97916829478989698" green="1" blue="0.39899894413134951" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Change Screen Button">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.54095466926172664" green="0.58240919014241443" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qMf-7z-wHZ" kind="show" identifier="toUpdated" id="f4S-FX-aYP"/>
+                                    <action selector="switchScreenToUpdated:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJX-R1-Hgx"/>
+                                    <segue destination="qMf-7z-wHZ" kind="show" identifier="toUpdatedFromMain" id="f4S-FX-aYP"/>
                                 </connections>
                             </button>
                         </subviews>
