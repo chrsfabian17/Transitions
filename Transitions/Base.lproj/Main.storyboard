@@ -16,12 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ybw-NF-kX9">
+                                <rect key="frame" x="195" y="262" width="210" height="30"/>
+                                <color key="backgroundColor" red="0.97916829478989698" green="1" blue="0.39899894413134951" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Change Screen Button">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.54095466926172664" green="0.58240919014241443" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qMf-7z-wHZ" kind="show" identifier="toUpdated" id="f4S-FX-aYP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.41177187411079386" green="1" blue="0.72447570121728133" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="56" y="437"/>
+            <point key="canvasLocation" x="26" y="151"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="OEI-em-zp1">
@@ -39,7 +52,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBC-PA-yVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="672" y="437"/>
+            <point key="canvasLocation" x="840" y="151"/>
         </scene>
     </scenes>
 </document>
