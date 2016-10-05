@@ -25,5 +25,9 @@ class ViewController: UIViewController {
         
     performSegueWithIdentifier("toUpdatedFromMain", sender:sender)
     }
+   
+        @IBAction func toActivitiesPage(sender: UIButton)
+        {
+    }
 }
 

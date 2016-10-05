@@ -13,6 +13,8 @@ class UpdatedViewController : UIViewController
     @IBOutlet private weak var topImage: UIImageView!
     @IBOutlet private weak var bottomImage: UIImageView!
     
+    @IBOutlet weak var myControl: UIPageControl!
+    
     override func viewDidLoad()
     
     {
@@ -21,4 +23,9 @@ class UpdatedViewController : UIViewController
             //Load this pages components
         bottomImage.image = UIImage(named: "IMG_0456")
     }
+    
+    @IBAction func toSecondHobbiesPage(sender: UIPageControl) {
+    }
+    
+    
 }

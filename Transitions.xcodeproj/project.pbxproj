@@ -40,6 +40,7 @@
 		DA2A2ABB1DA297F60097F734 = {
 			isa = PBXGroup;
 			children = (
+				DA2A2AD91DA298A40097F734 /* Controller */,
 				DA2A2AC61DA297F60097F734 /* Transitions */,
 				DA2A2AC51DA297F60097F734 /* Products */,
 			);
@@ -56,7 +57,6 @@
 		DA2A2AC61DA297F60097F734 /* Transitions */ = {
 			isa = PBXGroup;
 			children = (
-				DA2A2AD91DA298A40097F734 /* Controller */,
 				DA2A2ADA1DA298DA0097F734 /* View */,
 				DA2A2ACE1DA297F60097F734 /* Assets.xcassets */,
 				DA2A2AD31DA297F60097F734 /* Info.plist */,
@@ -72,6 +72,7 @@
 				DA2A2ADB1DA299E10097F734 /* UpdatedViewControllerFile.swift */,
 			);
 			name = Controller;
+			path = Transitions;
 			sourceTree = "<group>";
 		};
 		DA2A2ADA1DA298DA0097F734 /* View */ = {
@@ -306,6 +307,7 @@
 				DA2A2AD81DA297F60097F734 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
