@@ -5,22 +5,83 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Activities Page-->
         <scene sceneID="XyM-yR-5zP">
             <objects>
-                <viewController id="Gfk-9L-wGe" sceneMemberID="viewController">
+                <viewController id="Gfk-9L-wGe" customClass="ActivitiesPage" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fE6-Sx-9Vx"/>
                         <viewControllerLayoutGuide type="bottom" id="GXo-6k-Noz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="OUl-Es-Kmc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock Climbing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fp-u7-Nyq">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="0.33847880657998808" green="1" blue="0.64075289522150736" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="328" y="56" width="145" height="42"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rock" translatesAutoresizingMaskIntoConstraints="NO" id="zEx-k5-gUa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="271" y="191" width="259" height="179"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aK6-ze-oww">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="252" y="442" width="297" height="182"/>
+                                </variation>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hqE-7n-NWs">
+                                <rect key="frame" x="0.0" y="-15" width="118" height="31"/>
+                                <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="341" y="681" width="118" height="31"/>
+                                </variation>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.7784082579296302" blue="0.16161220929460218" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hqE-7n-NWs" firstAttribute="top" secondItem="2fp-u7-Nyq" secondAttribute="bottom" constant="583" id="200-db-c4g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2fp-u7-Nyq"/>
+                                <exclude reference="zEx-k5-gUa"/>
+                                <exclude reference="aK6-ze-oww"/>
+                                <exclude reference="hqE-7n-NWs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="200-db-c4g"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="2fp-u7-Nyq"/>
+                                <include reference="zEx-k5-gUa"/>
+                                <include reference="aK6-ze-oww"/>
+                                <include reference="hqE-7n-NWs"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="200-db-c4g"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="RockClimbingLabel" destination="2fp-u7-Nyq" id="o0c-aI-FZm"/>
+                        <outlet property="bottomImage" destination="aK6-ze-oww" id="Fc2-cK-uRa"/>
+                        <outlet property="topImage" destination="zEx-k5-gUa" id="H8w-bh-9t5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="616-nc-3N4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6.75" y="-558.75"/>
+            <point key="canvasLocation" x="-186.75" y="-663.75"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -87,12 +148,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295.5" y="221.25"/>
+            <point key="canvasLocation" x="-226.5" y="102.75"/>
         </scene>
-        <!--View Controller-->
+        <!--Technology Page-->
         <scene sceneID="mfg-6c-JA9">
             <objects>
-                <viewController id="Ckd-27-3eq" sceneMemberID="viewController">
+                <viewController id="Ckd-27-3eq" customClass="TechnologyPage" customModule="Transitions" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2yh-yf-WW4"/>
                         <viewControllerLayoutGuide type="bottom" id="NmF-UP-q6p"/>
@@ -104,7 +165,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NMB-iv-tQt">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="280" y="564" width="240" height="128"/>
+                                    <rect key="frame" x="222" y="446" width="358" height="240"/>
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHU-p9-bXX">
@@ -124,10 +185,24 @@
                                     <rect key="frame" x="319" y="64" width="163" height="31"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BfU-7K-R0a">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.34273768830000001" green="1" blue="0.66979486099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="375" y="721" width="51" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="toHomeButton:" destination="Ckd-27-3eq" eventType="touchUpInside" id="Vla-oD-sjp"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="IO8-ma-UQg"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alien" translatesAutoresizingMaskIntoConstraints="NO" id="Qyx-Mb-mXB">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="274" y="204" width="253" height="171"/>
+                                    <rect key="frame" x="227" y="149" width="349" height="214"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -136,6 +211,7 @@
                             <mask key="subviews">
                                 <exclude reference="NMB-iv-tQt"/>
                                 <exclude reference="vHU-p9-bXX"/>
+                                <exclude reference="BfU-7K-R0a"/>
                                 <exclude reference="Qyx-Mb-mXB"/>
                             </mask>
                         </variation>
@@ -143,14 +219,20 @@
                             <mask key="subviews">
                                 <include reference="NMB-iv-tQt"/>
                                 <include reference="vHU-p9-bXX"/>
+                                <include reference="BfU-7K-R0a"/>
                                 <include reference="Qyx-Mb-mXB"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="NMB-iv-tQt" id="Sc4-w5-fSc"/>
+                        <outlet property="toHomeButton" destination="BfU-7K-R0a" id="STy-XH-IoB"/>
+                        <outlet property="topImage" destination="Qyx-Mb-mXB" id="XLr-2z-qLp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Yw-6B-l9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1352.25" y="150.75"/>
+            <point key="canvasLocation" x="549.75" y="960.75"/>
         </scene>
         <!--Updated View Controller-->
         <scene sceneID="OEI-em-zp1">
@@ -164,12 +246,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Btn-yp-dby">
-                                <rect key="frame" x="180" y="311" width="240" height="208"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="243" y="522" width="314" height="216"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cars" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyF-tf-h7z">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
@@ -182,7 +258,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Zieke" translatesAutoresizingMaskIntoConstraints="NO" id="KXa-cc-FKF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="243" y="197" width="314" height="200"/>
+                                    <rect key="frame" x="216" y="154" width="368" height="242"/>
                                 </variation>
                             </imageView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="gXs-Fc-VG5">
@@ -196,6 +272,12 @@
                                     <segue destination="Ckd-27-3eq" kind="show" id="3m4-R4-NN0"/>
                                 </connections>
                             </pageControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Btn-yp-dby">
+                                <rect key="frame" x="180" y="311" width="240" height="208"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="207" y="456" width="387" height="258"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.4815466354537622" green="0.51968324577879332" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -220,11 +302,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBC-PA-yVm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="661.5" y="150.75"/>
+            <point key="canvasLocation" x="-129" y="960.75"/>
         </scene>
     </scenes>
     <resources>
         <image name="Alien" width="3360" height="2100"/>
         <image name="Zieke" width="960" height="610"/>
+        <image name="rock" width="720" height="960"/>
     </resources>
 </document>

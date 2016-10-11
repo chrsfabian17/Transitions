@@ -24,7 +24,8 @@ class UpdatedViewController : UIViewController
         bottomImage.image = UIImage(named: "IMG_0456")
     }
     
-    @IBAction func toSecondHobbiesPage(sender: UIPageControl) {
+    @IBAction func toSecondHobbiesPage(sender: UIPageControl)
+    {
     }
     
     
