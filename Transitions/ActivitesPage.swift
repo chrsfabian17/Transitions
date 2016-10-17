@@ -12,21 +12,25 @@ class ActivitiesPage : UIViewController
 {
     @IBOutlet weak var topImage: UIImageView!
     @IBOutlet weak var bottomImage: UIImageView!
-    @IBOutlet weak var RockClimbingLabel: UILabel!
-    @IBOutlet weak var `switch`: UISlider!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
     
-        bottomImage.image = UIImage(named : "bike")
+        bottomImage.image = UIImage(named : "Climbing")
     }
     
-    @IBAction func switchchange(sender: AnyObject)
-    
+    @IBAction func toSecondSportsPage(sender: UIPageControl)
     {
+    
     }
-
+    
 }
+
+
+
+
+
 
 

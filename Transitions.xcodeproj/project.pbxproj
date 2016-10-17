@@ -13,6 +13,7 @@
 		DA2A2ACF1DA297F60097F734 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA2A2ACE1DA297F60097F734 /* Assets.xcassets */; };
 		DA2A2AD21DA297F60097F734 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA2A2AD01DA297F60097F734 /* LaunchScreen.storyboard */; };
 		DA2A2ADC1DA299E10097F734 /* UpdatedViewControllerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2A2ADB1DA299E10097F734 /* UpdatedViewControllerFile.swift */; };
+		DABAC4991DAFC6230066F09A /* SecondSportsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABAC4981DAFC6230066F09A /* SecondSportsPage.swift */; };
 		DADF237F1DAD21E3001D3025 /* TechnologyPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF237E1DAD21E3001D3025 /* TechnologyPage.swift */; };
 		DADF23811DAD2ABF001D3025 /* ActivitesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADF23801DAD2ABF001D3025 /* ActivitesPage.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		DA2A2AD11DA297F60097F734 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA2A2AD31DA297F60097F734 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA2A2ADB1DA299E10097F734 /* UpdatedViewControllerFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UpdatedViewControllerFile.swift; path = "untitled folder/UpdatedViewControllerFile.swift"; sourceTree = "<group>"; };
+		DABAC4981DAFC6230066F09A /* SecondSportsPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSportsPage.swift; sourceTree = "<group>"; };
 		DADF237E1DAD21E3001D3025 /* TechnologyPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnologyPage.swift; sourceTree = "<group>"; };
 		DADF23801DAD2ABF001D3025 /* ActivitesPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivitesPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				DA2A2ADB1DA299E10097F734 /* UpdatedViewControllerFile.swift */,
 				DADF237E1DAD21E3001D3025 /* TechnologyPage.swift */,
 				DADF23801DAD2ABF001D3025 /* ActivitesPage.swift */,
+				DABAC4981DAFC6230066F09A /* SecondSportsPage.swift */,
 			);
 			name = Controller;
 			path = Transitions;
@@ -164,6 +167,7 @@
 				DA2A2ACA1DA297F60097F734 /* ViewController.swift in Sources */,
 				DADF23811DAD2ABF001D3025 /* ActivitesPage.swift in Sources */,
 				DADF237F1DAD21E3001D3025 /* TechnologyPage.swift in Sources */,
+				DABAC4991DAFC6230066F09A /* SecondSportsPage.swift in Sources */,
 				DA2A2ADC1DA299E10097F734 /* UpdatedViewControllerFile.swift in Sources */,
 				DA2A2AC81DA297F60097F734 /* AppDelegate.swift in Sources */,
 			);
